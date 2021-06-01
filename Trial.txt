@@ -1,0 +1,8 @@
+doc = Document()
+    doc.add_heading('Summary(you can add your own title here)',0)
+    doc.add_paragraph(best_sentences)
+    doc.save(save_as+'.docx')
+    length = 0
+    for elem in  best_sentences:
+        length += len(elem.split())
+    print(f"\n\nYour paragraph is summarized to {length} words")
